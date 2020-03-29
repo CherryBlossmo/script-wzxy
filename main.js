@@ -94,7 +94,7 @@ function autoGpsSign(id) {
         //console.log(res.statusCode);
     });
 
-    req.write(`id=${id}&` + obj2url(config.SignConfig));
+    req.write(`id=${id}&` + obj2url(config.SignConfig) + '&key=daf62d4cce9ebe2a57b21452323b24ed&timestamp=1585116341000');
     req.on('error', e => {
         event.emit('error', `autoGpsSign Error : ${e.message}`);
     });
