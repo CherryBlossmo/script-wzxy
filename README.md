@@ -18,12 +18,6 @@
 
 目前只能抓包（记得用IOS或者PC版本的微信打开小程序来抓包），这个没得说的，如果有人研究出来如何获取微信的登录验证，那可是真滴NB。
 
-session的值就在授权登录之后，每次的我在校园https请求头的Cookie里面。
+session的值就在授权登录之后，每次的我在校园student.wozaixiaoyuan.com，请求头的Cookie里面。
 
-##### 每日健康打卡
-
-``` javascript
-url: 'https://www.wozaixiaoyuan.com/',
-method: 'POST',
-data: 
-```
+获取session的值之后就可以填入到文件程序中了。
